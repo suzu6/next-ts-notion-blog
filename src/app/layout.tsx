@@ -1,4 +1,4 @@
-import './globals.scss'
+import '@/styles/globals.scss'
 import Head from './head'
 
 export default function RootLayout({
