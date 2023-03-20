@@ -1,4 +1,4 @@
-import '@/styles/globals.css'
+import '../styles/globals.css'
 import Footer from '@/components/layout/Footer'
 import Header from '@/components/layout/Header'
 import Head from './head'
@@ -18,7 +18,7 @@ export default function RootLayout({
       <body>
         <div className='mx-auto max-w-3xl px-4'>
           <Header />
-          {children}
+          <main className='main'>{children}</main>
           <Footer />
         </div>
       </body>

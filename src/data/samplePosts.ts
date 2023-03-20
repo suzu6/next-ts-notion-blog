@@ -2,16 +2,24 @@ import Post from '@/domains/Post'
 
 const samplePosts: Post[] = [
   {
+    id: '1',
     title: 'Title1',
-    publishedDate: '2023/01/01',
-    author: 'suzu6',
-    content: 'content',
+    createdAt: '2023/01/01',
+    updatedAt: '2023/01/01',
+    isDraft: false,
+    tags: 'simulation,アルゴリズム,JavaScript,p5js',
+    content:
+      '私は書いたコードのログが流れてるところをぼーっと眺めるのが好きです。シミュレーション途中のグラフや画像が変わっていくのも大好きです。',
   },
   {
-    title: 'Title2',
-    publishedDate: '2023/01/02',
-    author: 'suzu6',
-    content: 'content',
+    id: '2',
+    title: 'Title1',
+    createdAt: '2023/01/01',
+    updatedAt: '2023/01/01',
+    isDraft: false,
+    tags: 'simulation,アルゴリズム,JavaScript,p5js',
+    content:
+      '私は書いたコードのログが流れてるところをぼーっと眺めるのが好きです。シミュレーション途中のグラフや画像が変わっていくのも大好きです。',
   },
 ]
 

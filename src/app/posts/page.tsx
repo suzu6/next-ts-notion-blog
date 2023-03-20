@@ -1,13 +1,12 @@
-import BlogContent from '@/components/BlogContent'
+import ContentsList from '@/components/ContentsList'
 import samplePosts from '@/data/samplePosts'
-import styles from './page.module.css'
 
-export default function Home() {
-  const post = samplePosts[0]
+export default function Posts() {
+  const posts = samplePosts
 
   return (
-    <main className={styles.main}>
-      <BlogContent post={post}></BlogContent>
-    </main>
+    <>
+      <ContentsList posts={posts} />
+    </>
   )
 }
