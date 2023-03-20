@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
-import Header from '@/components/Header'
+import Footer from '@/components/layout/Footer'
+import Header from '@/components/layout/Header'
 import Head from './head'
 
 export default function RootLayout({
@@ -15,11 +16,10 @@ export default function RootLayout({
       */}
       <Head />
       <body>
-        <div className='mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
-          <div className='flex h-screen flex-col justify-between'>
-            <Header />
-            {children}
-          </div>
+        <div className='mx-auto max-w-3xl px-4'>
+          <Header />
+          {children}
+          <Footer />
         </div>
       </body>
     </html>
