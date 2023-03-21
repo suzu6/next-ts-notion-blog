@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import styled from './{{{NAME}}}Presenter.module.css';
 
 interface Props {}
 
@@ -9,5 +8,5 @@ interface Props {}
  * @param {Props} { }
  */
 export const {{{NAME}}}Presenter: FC<Props> = ({}: Props) => {
-  return <div className={styled.root}>テスト</div>
+  return <div className=''>テスト</div>
 };
