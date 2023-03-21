@@ -1,15 +1,18 @@
+import { UrlObject } from 'url'
+import * as NextLink from 'next/link'
 import React, { FC } from 'react'
 
+declare type Url = string | UrlObject
 interface Props {
   label: string
-  href: string
+  href: Url
   color?: 'default' | 'primary' | 'secondary'
 }
 
 /**
  * Link
  *
- * @param {Props} { }
+ * @param Props
  */
 export const Link: FC<Props> = (props: Props) => {
   const color = () => {
@@ -25,12 +28,12 @@ export const Link: FC<Props> = (props: Props) => {
 
   return (
     <>
-      <a
+      <NextLink.default
         className={color() + ' mx-1 text-sm  font-medium hover:text-gray-600 '}
         href={props.href}
       >
         {props.label}
-      </a>
+      </NextLink.default>
     </>
   )
 }
