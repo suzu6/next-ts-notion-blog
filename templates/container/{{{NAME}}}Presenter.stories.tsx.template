@@ -1,0 +1,17 @@
+import { ComponentMeta, ComponentStoryObj } from '@storybook/react';
+import { {{{NAME}}}Presenter } from './{{{NAME}}}Presenter';
+
+const meta: ComponentMeta<typeof {{{NAME}}}Presenter> = {
+  title: 'Components/{{{PATH}}}{{{NAME}}}Presenter',
+  component: {{{NAME}}}Presenter,
+  parameters: {
+    //  nextRouter: { asPath: '/' },
+    //  layout: 'fullscreen',
+  },
+  args: {},
+};
+export default meta;
+
+export const Primary:ComponentStoryObj<typeof {{{NAME}}}Presenter> = {
+  args: {}
+}

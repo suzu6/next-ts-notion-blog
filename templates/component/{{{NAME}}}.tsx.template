@@ -1,0 +1,13 @@
+import React, { FC } from 'react';
+import styled from './{{{NAME}}}.module.css';
+
+interface Props {}
+
+/**
+ * {{{NAME}}}
+ *
+ * @param {Props} { }
+ */
+export const {{{NAME}}}: FC<Props> = ({}: Props) => {
+  return <div className={styled.root}>テスト</div>
+};

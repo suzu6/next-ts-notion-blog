@@ -1,0 +1,13 @@
+import React, { FC } from 'react';
+import {{{{NAME}}}Presenter} from './{{{NAME}}}Presenter';
+
+interface Props {}
+
+/**
+ * {{{NAME}}}
+ *
+ * @param {Props} { }
+ */
+export const {{{NAME}}}Container: FC<Props> = ({}) => {
+  return <{{{NAME}}}Presenter />
+};

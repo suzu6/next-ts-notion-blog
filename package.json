@@ -9,7 +9,10 @@
     "lint": "next lint",
     "lf": "next lint --fix",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "sb": "storybook",
+    "build-storybook": "build-storybook",
+    "sf": "scaffold create -t templates/component",
+    "sfc": "scaffold create -t templates/container"
   },
   "dependencies": {
     "@next/font": "13.1.6",
