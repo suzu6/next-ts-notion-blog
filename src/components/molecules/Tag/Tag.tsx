@@ -13,7 +13,9 @@ interface Props {
 export const Tag: FC<Props> = (props: Props) => {
   return (
     <span className=''>
-      <Link href={'/tags/' + props.label}>{props.label}</Link>
+      <Link href={'/tags/' + props.label} color='primary'>
+        {props.label}
+      </Link>
     </span>
   )
 }
