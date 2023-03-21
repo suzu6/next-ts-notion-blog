@@ -1,10 +1,10 @@
 import { UrlObject } from 'url'
 import * as NextLink from 'next/link'
-import React, { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 declare type Url = string | UrlObject
 interface Props {
-  label: string
+  children: ReactNode
   href: Url
   color?: 'default' | 'primary' | 'secondary'
 }
@@ -14,7 +14,7 @@ interface Props {
  *
  * @param Props
  */
-export const Link: FC<Props> = (props: Props) => {
+export const Link: FC<Props> = (props) => {
   const color = () => {
     switch (props.color) {
       case 'primary':
@@ -32,7 +32,7 @@ export const Link: FC<Props> = (props: Props) => {
         className={color() + ' mx-1 text-sm  font-medium hover:text-gray-600 '}
         href={props.href}
       >
-        {props.label}
+        {props.children}
       </NextLink.default>
     </>
   )

@@ -9,7 +9,7 @@ const meta: ComponentMeta<typeof Link> = {
     //  layout: 'fullscreen',
   },
   args: {
-    label: 'test',
+    children: 'test',
     href: '/',
     color: 'default',
   },
@@ -18,7 +18,7 @@ export default meta
 
 export const Primary: ComponentStoryObj<typeof Link> = {
   args: {
-    label: 'primary',
+    children: 'primary',
     href: '/',
     color: 'primary',
   },
@@ -26,7 +26,7 @@ export const Primary: ComponentStoryObj<typeof Link> = {
 
 export const Secondary: ComponentStoryObj<typeof Link> = {
   args: {
-    label: 'secondary',
+    children: 'secondary',
     href: '/',
     color: 'secondary',
   },
@@ -34,7 +34,7 @@ export const Secondary: ComponentStoryObj<typeof Link> = {
 
 export const Default: ComponentStoryObj<typeof Link> = {
   args: {
-    label: 'default',
+    children: 'default',
     href: '/',
   },
 }
