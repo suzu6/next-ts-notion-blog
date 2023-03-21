@@ -4,10 +4,7 @@ import { {{{NAME}}}Presenter } from './{{{NAME}}}Presenter';
 const meta: ComponentMeta<typeof {{{NAME}}}Presenter> = {
   title: 'Components/{{{PATH}}}{{{NAME}}}Presenter',
   component: {{{NAME}}}Presenter,
-  parameters: {
-    //  nextRouter: { asPath: '/' },
-    //  layout: 'fullscreen',
-  },
+  parameters: {},
   args: {},
 };
 export default meta;
